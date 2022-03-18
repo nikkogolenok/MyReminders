@@ -27,4 +27,11 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    // MARK: - Actions
+    @IBAction func didTapTestAction(_ sender: UIBarButtonItem) {
+    }
+    
+    @IBAction func didTapAddAction(_ sender: UIBarButtonItem) {
+    }
 }

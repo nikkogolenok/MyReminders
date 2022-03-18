@@ -31,8 +31,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Reminders" id="afd-Yc-N6t">
-                        <barButtonItem key="leftBarButtonItem" title="Test" id="yX0-0B-mvl"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sMJ-fo-Ih5"/>
+                        <barButtonItem key="leftBarButtonItem" title="Test" id="yX0-0B-mvl">
+                            <connections>
+                                <action selector="didTapTestAction:" destination="BYZ-38-t0r" id="ZHI-XQ-Xs4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sMJ-fo-Ih5">
+                            <connections>
+                                <action selector="didTapAddAction:" destination="BYZ-38-t0r" id="cd8-d5-9Cv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="uRW-2B-9W6" id="lpj-qd-zhb"/>
