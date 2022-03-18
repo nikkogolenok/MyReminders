@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: - Variable
+    var myReminders = [MyReminder]()
+    
     // MARK: - Outlet
     @IBOutlet weak var tableView: UITableView!
     

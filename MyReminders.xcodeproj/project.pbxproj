@@ -14,6 +14,7 @@
 		443B604227E4662D009C6390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B604127E4662D009C6390 /* Assets.xcassets */; };
 		443B604527E4662D009C6390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B604327E4662D009C6390 /* LaunchScreen.storyboard */; };
 		443B605127E46963009C6390 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B605027E46963009C6390 /* ViewController+Ext.swift */; };
+		443B605427E46A5F009C6390 /* MyReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B605327E46A5F009C6390 /* MyReminder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		443B604427E4662D009C6390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B604627E4662D009C6390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443B605027E46963009C6390 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		443B605327E46A5F009C6390 /* MyReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReminder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				443B604F27E46946009C6390 /* Extension */,
+				443B605227E46A3B009C6390 /* Model */,
 				443B604E27E466C9009C6390 /* View */,
 				443B604D27E466BB009C6390 /* Controllers */,
 				443B604C27E4668A009C6390 /* SupportFiles */,
@@ -100,6 +103,14 @@
 				443B605027E46963009C6390 /* ViewController+Ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		443B605227E46A3B009C6390 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				443B605327E46A5F009C6390 /* MyReminder.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				443B603D27E4662A009C6390 /* ViewController.swift in Sources */,
+				443B605427E46A5F009C6390 /* MyReminder.swift in Sources */,
 				443B603927E4662A009C6390 /* AppDelegate.swift in Sources */,
 				443B605127E46963009C6390 /* ViewController+Ext.swift in Sources */,
 				443B603B27E4662A009C6390 /* SceneDelegate.swift in Sources */,
