@@ -20,14 +20,24 @@ class AddViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        createDelegateAndNavigation()
+    }
+    
+    func createDelegateAndNavigation() {
+        titleTextField.delegate = self
+        bodyTextField.delegate = self
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(didTapSaveButton))
     }
     
     // MARK: - Action
-    @IBAction func didTapSaveButton(_ sender: UIButton) {
-        if let titleText = titleTextField.text, titleText.isEmpty,
-           let bodyText = bodyTextField.text, bodyText.isEmpty {
-            
-            let targetDate = datePicker.date
+    @objc func didTapSaveButton() {
+            if let titleText = titleTextField.text, !titleText.isEmpty,
+                let bodyText = bodyTextField.text, !bodyText.isEmpty {
+
+                let targetDate = datePicker.date
+
+                completion?(titleText, bodyText, targetDate)
+            }
         }
-    }
 }

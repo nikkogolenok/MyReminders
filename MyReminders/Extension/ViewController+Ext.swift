@@ -16,6 +16,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = myReminders[indexPath.row].title
+        let date = myReminders[indexPath.row].date
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM, dd, YYYY at hh:mm a"
+        cell.detailTextLabel?.text = formatter.string(from: date)
         
         return cell
     }
