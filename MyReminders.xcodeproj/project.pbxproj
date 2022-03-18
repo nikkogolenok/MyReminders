@@ -13,6 +13,7 @@
 		443B604027E4662A009C6390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B603E27E4662A009C6390 /* Main.storyboard */; };
 		443B604227E4662D009C6390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B604127E4662D009C6390 /* Assets.xcassets */; };
 		443B604527E4662D009C6390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B604327E4662D009C6390 /* LaunchScreen.storyboard */; };
+		443B605127E46963009C6390 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B605027E46963009C6390 /* ViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		443B604127E4662D009C6390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443B604427E4662D009C6390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B604627E4662D009C6390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443B605027E46963009C6390 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		443B603727E4662A009C6390 /* MyReminders */ = {
 			isa = PBXGroup;
 			children = (
+				443B604F27E46946009C6390 /* Extension */,
 				443B604E27E466C9009C6390 /* View */,
 				443B604D27E466BB009C6390 /* Controllers */,
 				443B604C27E4668A009C6390 /* SupportFiles */,
@@ -89,6 +92,14 @@
 				443B604327E4662D009C6390 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		443B604F27E46946009C6390 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				443B605027E46963009C6390 /* ViewController+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			files = (
 				443B603D27E4662A009C6390 /* ViewController.swift in Sources */,
 				443B603927E4662A009C6390 /* AppDelegate.swift in Sources */,
+				443B605127E46963009C6390 /* ViewController+Ext.swift in Sources */,
 				443B603B27E4662A009C6390 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

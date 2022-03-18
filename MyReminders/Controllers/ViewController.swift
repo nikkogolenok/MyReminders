@@ -9,9 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: - Outlet
+    @IBOutlet weak var tableView: UITableView!
+    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        createDelegate()
+    }
+    
+    // MARK: - Methds
+    func createDelegate() {
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 }
-
